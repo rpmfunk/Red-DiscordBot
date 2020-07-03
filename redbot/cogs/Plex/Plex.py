@@ -1,5 +1,11 @@
-from redbot.core import commands
 
+
+import json
+from redbot.core import commands
+from plexapi.server import PlexServer
+
+
+plex = PlexServer(baseurl, token)
 class plex(commands.Cog):
     """My custom cog"""
 
@@ -8,3 +14,6 @@ class plex(commands.Cog):
         """This does stuff!"""
         # Your code will go here
         await ctx.send("I can do stuff!")
+
+plex = PlexServer(baseurl, token)
+
